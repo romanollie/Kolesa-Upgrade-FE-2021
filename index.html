@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
@@ -18,7 +21,7 @@
                 <div class="option1">
                     <img src="images/option1.svg" alt="cool shirt 1" width="50px" height="50px">
                 </div>
-                <div class="option2">
+                <div class="option2 active">
                     <img src="images/option2.svg" alt="cool shirt 2" width="50px" height="50px">
                 </div>
                 <div class="option3">
@@ -37,7 +40,7 @@
             <button class="button" type="button">
                 Заказать
             </button>
-            <p>
+            <p class="colors-title">
                 Цвета:
             </p>
             <div class="colors">
@@ -54,31 +57,34 @@
                     <div class="gray-text">Серый</div>
                 </div>
             </div>
-            <p>
+            <p class="sizes-title">
                 Размер:
             </p>
             <div class="sizes">
-                <div class="s">S</div>
+                <div class="s active">S</div>
                 <div class="m">M</div>
                 <div class="l">L</div>
             </div>
             <div class="details">
-                <h4>Детали:</h4>
+                <h4 class="details-title">Детали:</h4>
                 <p>Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
             </div>
             <div class="choose-size">
-                <h4>Как выбрать размер:</h4>
+                <h4 class="choose-title">Как выбрать размер:</h4>
                 <p>Написать дяде Рику для уточнения.</p>
             </div>
-            <div class="balance">
-                <div class="current-balance">
-                    <p>Твой баланс:</p>
-                    <p>3 945 баллов</p>
-                </div>
-                <div class="bags">
-                    <img src="images/bags.png" alt="">
-                </div>
+        </div>
+        <div class="balance">
+            <div class="current-balance">
+                <p class="your-balance">Твой баланс:</p>
+                <p>3 945 баллов</p>
             </div>
+            <div class="bags">
+                <img src="images/bags.png" alt="">
+            </div>
+        </div>
+        <div class="close">
+            <img src="images/close.png" alt="" width="18.67px" height="18.67px">
         </div>
     </div>
     <div id="app"></div>
