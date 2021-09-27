@@ -61,6 +61,7 @@ p {
     margin-top: 10px;
     width: 330px;
     gap: 8px;
+    cursor: pointer;
 }
 
 .option1,
@@ -130,6 +131,7 @@ p {
     border-radius: 8px;
     color: #2a81dd;
     width: auto;
+    cursor: pointer;
 }
 
 .blue::before {
@@ -194,6 +196,7 @@ p {
     border: 1px solid #f4f4f4;
     text-align: center;
     color: #2a81dd;
+    cursor: pointer;
 }
 
 .sizes .active {
