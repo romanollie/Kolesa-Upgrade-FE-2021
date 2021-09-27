@@ -5,7 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
@@ -34,36 +36,46 @@
             <h3 class="title">
                 Футболка "Эволюционируй или сдохни"
             </h3>
-            <p class="price">
-                100 баллов
-            </p>
-            <button class="button" type="button">
-                Заказать
-            </button>
+            <div class="showcase">
+                <div class="showcase-left">
+                    <p class="price">
+                        100 баллов
+                    </p>
+                    <button class="button" type="button">
+                        Заказать
+                    </button>
+                </div>
+                <div class="balance">
+                    <div class="current-balance">
+                        <p class="your-balance">Твой баланс:</p>
+                        <p>3 945 баллов</p>
+                    </div>
+                    <div class="bags">
+                        <img src="images/bags.png" alt="">
+                    </div>
+                </div>
+            </div>
             <p class="colors-title">
                 Цвета:
             </p>
             <div class="colors">
-                <div class="color1">
-                    <div class="blue"></div>
-                    <div class="blue-text">Синий</div>
-                </div>
-                <div class="color2">
-                    <div class="beige"></div>
-                    <div class="beige-text">Бежевый</div>
-                </div>
-                <div class="color3">
-                    <div class="gray"></div>
-                    <div class="gray-text">Серый</div>
-                </div>
+                <input type="radio" name="color" id="blue">
+                <label class="options blue" for="blue">Синий</label>
+                <input type="radio" name="color" id="beige">
+                <label class="options beige" for="beige">Бежевый</label>
+                <input type="radio" name="color" id="gray">
+                <label class="options gray" for="gray">Серый</label>
             </div>
             <p class="sizes-title">
                 Размер:
             </p>
             <div class="sizes">
-                <div class="s active">S</div>
-                <div class="m">M</div>
-                <div class="l">L</div>
+                <input type="radio" name="size" id="s">
+                <label class="s" for="s">S</label>
+                <input type="radio" name="size" id="m">
+                <label class ="m" for="m">M</label>
+                <input type="radio" name="size" id="l">
+                <label class="l" for="l">L</label>
             </div>
             <div class="details">
                 <h4 class="details-title">Детали:</h4>
@@ -74,17 +86,8 @@
                 <p>Написать дяде Рику для уточнения.</p>
             </div>
         </div>
-        <div class="balance">
-            <div class="current-balance">
-                <p class="your-balance">Твой баланс:</p>
-                <p>3 945 баллов</p>
-            </div>
-            <div class="bags">
-                <img src="images/bags.png" alt="">
-            </div>
-        </div>
         <div class="close">
-            <img src="images/close.png" alt="" width="18.67px" height="18.67px">
+            <img src="images/close.png" alt="" width="24px" height="24px">
         </div>
     </div>
     <div id="app"></div>

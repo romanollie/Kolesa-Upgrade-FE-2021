@@ -22,6 +22,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
+    height: 100vh;
 }
 
 img {
@@ -36,7 +37,6 @@ p {
 }
 
 .card {
-    height: 588px;
     width: 1039px;
     background: #fff;
     display: flex;
@@ -73,15 +73,8 @@ p {
     border: #00458a 1px solid;
 }
 
-.option1:active,
-.option2:active,
-.option3:active {
-    border: #00458a 1px solid;
-}
-
 /* DESCRIPTION */
 .title {
-    width: 392px;
     height: 32px;
     font-style: normal;
     font-weight: normal;
@@ -90,9 +83,12 @@ p {
     margin: 8px 0;
 }
 
+.showcase {
+    display: flex;
+    justify-content: space-between;
+}
+
 .price {
-    width: 112px;
-    height: 32px;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -108,66 +104,75 @@ p {
     width: 134px;
     height: 36px;
     color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
 }
 
 /* COLORS */
 .colors-title {
-    margin: 20px 0 6px 0;
+    padding: 24px 0 8px;
 }
 
 .colors {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: center;
-}
-
-.colors .color1,
-.colors .color2,
-.colors .color3 {
-    display: flex;
+    justify-content: flex-start;
     gap: 8px;
-    padding: 8px;
-    height: 40px;
-    border-radius: 8px;
-    background: #fff;
-    margin-right: 6px;
-    border: 1px solid #f4f4f4;
-    color: #2a81dd;
 }
 
-.colors .color1 .blue,
-.colors .color2 .beige,
-.colors .color3 .gray {
+.colors .options {
+    margin: 0;
+    padding: 8px 12px 8px 8px;
+    border: 1px solid #f4f4f4;
+    border-radius: 8px;
+    color: #2a81dd;
+    width: auto;
+}
+
+.blue::before {
+    content: '';
     width: 23px;
     height: 24px;
     background: #00458a;
     border-radius: 4px;
 }
 
-.colors .color1 .blue {
-    background: #00458a;
-}
-
-.colors .color2 .beige {
+.beige::before {
+    content: '';
+    width: 23px;
+    height: 24px;
     background: #efe8d8;
+    border-radius: 4px;
 }
 
-.colors .color3 .gray {
+.gray::before {
+    content: '';
+    width: 23px;
+    height: 24px;
     background: #d4d4da;
+    border-radius: 4px;
 }
 
-.colors .color1:hover,
-.colors .color2:hover,
-.colors .color3:hover {
+.colors .options:hover {
     background: #d6ecfb;
     color: #000;
 }
 
+.colors input:checked + label {
+    background: #d6ecfb;
+    color: #000;
+}
+
+.colors input {
+    display: none;
+}
+
 /* SIZES */
 .sizes-title {
-    margin: 20px 0 6px 0;
+    padding: 20px 0 8px;
 }
 
 .sizes {
@@ -203,23 +208,33 @@ p {
     color: #000;
 }
 
+.sizes input:checked + label {
+    background: #d6ecfb;
+    color: #000;
+}
+
+.sizes input {
+    display: none;
+}
+
+/* DETAILS */
+
 .details-title,
 .choose-title {
-    margin: 20px 0 6px 0;
+    padding: 24px 0 4px 0;
 }
 
 .balance {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     width: 196px;
     height: 68px;
-    left: 787px;
-    top: 112px;
+    margin-top: 20px;
     background: #f0fafd;
     border-radius: 16px;
+    font-size: 16px;
 }
 
 .balance .your-balance {
@@ -228,6 +243,6 @@ p {
 
 .close {
     position: absolute;
-    top: 40px;
-    right: 6.67px;
+    top: -40px;
+    right: 30px;
 }
