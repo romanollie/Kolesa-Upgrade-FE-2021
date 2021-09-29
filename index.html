@@ -5,14 +5,33 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-
+    <div class="content">
+        <!-- HEADER -->
+        <header>
+            <img src="images/mainpage/logo.svg" width="215px" height="35px" alt="">
+            <div class="active-bar">
+                <div class="search">
+                    <button>
+                        <img src="images/mainpage/search.svg" width="18px" height="18px" alt="">
+                    </button>
+                    <input type="text" placeholder="Поиск">
+                </div>
+                <div class="user">
+                    <img src="images/mainpage/user.svg" width="44px" height="44px" alt="">
+                    <div class="user-info">
+                        <p class="name">Мортиджан</p>
+                        <p class="points">300 баллов</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
     <div id="app"></div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
