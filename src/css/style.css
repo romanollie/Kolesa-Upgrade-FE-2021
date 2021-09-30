@@ -413,10 +413,12 @@ footer {
     font-weight: 400;
 }
 
-.social .fa-instagram,
-.social .fa-youtube,
-.social .fa-vk {
+.social .instagram,
+.social .youtube,
+.social .vk {
     color: #fff;
+    width: 18px;
+    height: 18px;
 }
 
 .footer-feedback {
