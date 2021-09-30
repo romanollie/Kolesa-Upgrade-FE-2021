@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
@@ -14,7 +15,7 @@
     <div class="content">
         <!-- HEADER -->
         <header>
-            <img src="images/mainpage/logo.svg" width="215px" height="35px" alt="">
+            <img class="logo" src="images/mainpage/logo.svg" width="215px" height="35px" alt="">
             <div class="active-bar">
                 <div class="search">
                     <button>
@@ -22,17 +23,200 @@
                     </button>
                     <input type="text" placeholder="Поиск">
                 </div>
-                <div class="user">
+                <a href="#" class="user">
                     <img src="images/mainpage/user.svg" width="44px" height="44px" alt="">
                     <div class="user-info">
                         <p class="name">Мортиджан</p>
                         <p class="points">300 баллов</p>
                     </div>
-                </div>
+                </a>
             </div>
         </header>
+
+
+
+        <div class="showcase">
+            <!-- NAVBAR -->
+            <nav>
+                <ul>
+                    <li><a href="#">Оргсхема</a></li>
+                    <li><a class="kolesateam" href="#">Kolesa Team</a></li>
+                    <li class="active"><a class="kolesashop" href="#">Kolesa Shop</a></li>
+                    <li><a href="#">Картина компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                    <li><a href="#">Библиотека</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+
+
+
+            <!-- SECTION -->
+            <section>
+                <div class="banner">
+                    <img src="images/mainpage/banner.svg" width="1040px" height="335px" alt="">
+                </div>
+                <div class="hotbuttons">
+                    <button class="hotbutton1">
+                        <span>Получить баллы</span>
+                        <img src="images/mainpage/plus.svg" width="40px" height="40px" alt="">
+                    </button>
+                    <button class="hotbutton2">
+                        <span>Как получить баллы</span>
+                        <img src="images/mainpage/question.svg" width="40px" height="40px" alt="">
+                    </button>
+                    <button class="hotbutton3">
+                        <span>Подарить баллы</span>
+                        <img src="images/mainpage/gift.svg" width="40px" height="40px" alt="">
+                    </button>
+                </div>
+                <div class="radiobuttons">
+                    <input type="radio" name="category" id="all-items">
+                    <label for="all-items">Все товары</label>
+                    <input type="radio" name="category" id="clothes">
+                    <label for="clothes">Одежда</label>
+                    <input type="radio" name="category" id="accessories">
+                    <label for="accessories">Аксессуары</label>
+                </div>
+                <div class="options">
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="">
+                        <p class="option-points">220 баллов</p>
+                        <p class="option-description">Футболка "Эволюционируй или ...</p>
+                        <p class="option-sizes">Размеры S/M/L</p>
+                        <div class="hidden-button">
+                            <button>Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
-    <div id="app"></div>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <p>&copy; Kolesa Group</p>
+                <div class="social">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-vk"></a>
+                </div>
+            </div>
+            <div class="footer-feedback">
+                <div class="feedback-text">
+                    <p>Есть идеи что улучшить?</p>
+                    <p>Не знаешь с кем решить проблему?</p>
+                </div>
+                <button>Написать</button>
+            </div>
+        </div>
+    </footer>
+    <!-- <div id="app"></div> -->
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
