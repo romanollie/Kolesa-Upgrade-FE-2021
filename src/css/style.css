@@ -18,7 +18,7 @@ body {
     color: #1c1819;
     line-height: 1.5;
     font-size: 16px;
-    position: relative;
+    height: 100vh;
 }
 
 ul {
@@ -32,6 +32,13 @@ a {
 
 button {
     cursor: pointer;
+}
+
+.main {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
@@ -50,13 +57,9 @@ button {
 
 /* HEADER */
 
-/* HEADER */
-
-/* HEADER */
-
 header {
     width: 100%;
-    height: 48px;
+    min-height: 48px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,8 +81,8 @@ header .logo {
 
 .search {
     background: #f2f2f3;
-    width: 300px;
-    height: 44px;
+    min-width: 300px;
+    min-height: 44px;
     display: flex;
     flex-direction: row;
     gap: 0;
@@ -124,10 +127,9 @@ header .logo {
 }
 
 .user {
-    width: 144px;
-    height: 44px;
     display: flex;
     justify-content: space-between;
+    gap: 16px;
     align-items: center;
 }
 
@@ -143,16 +145,14 @@ header .logo {
     font-size: 14px;
     font-weight: 600;
     color: #2a81dd;
+    line-height: 24px;
 }
 
 .user .user-info .points {
     font-size: 13px;
     font-weight: 400;
+    line-height: 20px;
 }
-
-/* NAVBAR */
-
-/* NAVBAR */
 
 /* NAVBAR */
 
@@ -181,7 +181,8 @@ nav ul .active {
 }
 
 nav ul li a {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 400;
 }
 
@@ -189,10 +190,6 @@ nav ul li .kolesateam,
 nav ul li .kolesashop {
     font-weight: 600;
 }
-
-/* SECTION */
-
-/* SECTION */
 
 /* SECTION */
 
@@ -207,17 +204,17 @@ section {
 /* HOTBUTTONS */
 
 .hotbuttons {
-    display: flex;
-    height: 76px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 76px;
+    gap: 24px;
     margin-bottom: 40px;
 }
 
-.hotbutton1,
-.hotbutton2,
-.hotbutton3 {
-    width: 330px;
-    height: 76px;
+.hotbutton_green,
+.hotbutton_yellow,
+.hotbutton_blue {
+    font-family: 'Open Sans', sans-serif;
     border-radius: 16px;
     font-weight: 600;
     font-size: 20px;
@@ -226,43 +223,43 @@ section {
     position: relative;
 }
 
-.hotbutton1 {
+.hotbutton_green {
     background: #eff8eb;
 }
 
-.hotbutton1:hover {
+.hotbutton_green:hover {
     background: #e3f3dc;
 }
 
-.hotbutton2 {
+.hotbutton_yellow {
     background: #fffae7;
 }
 
-.hotbutton2:hover {
+.hotbutton_yellow:hover {
     background: #fff6d3;
 }
 
-.hotbutton3 {
+.hotbutton_blue {
     background: #e9f2fb;
 }
 
-.hotbutton3:hover {
+.hotbutton_blue:hover {
     background: #d8e8f8;
 }
 
-.hotbutton1 img {
+.hotbutton_green img {
     position: absolute;
     left: 20px;
     top: 18px;
 }
 
-.hotbutton2 img {
+.hotbutton_yellow img {
     position: absolute;
     left: 15px;
     top: 18px;
 }
 
-.hotbutton3 img {
+.hotbutton_blue img {
     position: absolute;
     left: 20px;
     top: 18px;
@@ -274,8 +271,11 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 9px;
+    gap: 8px;
     margin-bottom: 16px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .radiobuttons input {
@@ -313,7 +313,9 @@ section {
 
 .options .option {
     cursor: pointer;
-    width: 330px;
+
+    /* width: 330px; */
+    margin-bottom: -40px;
 }
 
 .options .option .option-points {
@@ -349,7 +351,10 @@ section {
 }
 
 .options .option button {
-    width: 298px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 298px;
     height: 44px;
     color: #fff;
     background: #2a81dd;
@@ -366,6 +371,7 @@ section {
 .option:hover {
     box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
     border-radius: 8px;
+    z-index: 10;
 }
 
 .option:hover > .option-points {
@@ -378,16 +384,18 @@ section {
 
 /* FOOTER */
 
-/* FOOTER */
-
-/* FOOTER */
-
 footer {
     min-height: 98px;
     color: #fff;
     background: #1c1819;
-    position: static;
-    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    align-self: flex-end;
+    z-index: 11;
+}
+
+footer a {
+    height: 18px;
 }
 
 .footer-content {
@@ -404,7 +412,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 14px;
-    margin-top: 11px;
+    margin-top: 12px;
 }
 
 .footer-social p {
@@ -428,12 +436,17 @@ footer {
 }
 
 .footer-feedback button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
     width: 150px;
     height: 36px;
     background-color: #fff;
     color: #2a81dd;
     border: #fff;
     border-radius: 8px;
+    text-align: center;
 }
 
 .footer-feedback button:hover {
