@@ -1,0 +1,14 @@
+@import './vars.scss';
+
+.networks {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 12px;
+
+    &__img {
+        color: $white;
+        width: 18px;
+        height: 18px;
+    }
+}

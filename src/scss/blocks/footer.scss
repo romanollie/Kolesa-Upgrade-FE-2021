@@ -1,0 +1,27 @@
+@import './vars.scss';
+
+.footer {
+    min-height: 98px;
+    color: $white;
+    background: $black;
+    font-family: $primary;
+    width: 100%;
+    align-self: flex-end;
+    z-index: 11;
+
+    &__content {
+        width: 1400px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px 24px 32px;
+    }
+
+    &__feedback {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+}

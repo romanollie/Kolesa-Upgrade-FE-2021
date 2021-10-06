@@ -1,0 +1,43 @@
+@import './vars.scss';
+
+.hotbutton {
+    color: $black;
+    font-family: $primary;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__img {
+        margin: 10px 16px 10px 24px;
+    }
+
+    &--green {
+        background-color: $payedgreen;
+
+        &:hover {
+            background-color: $lightgreen;
+        }
+    }
+
+    &--blue {
+        background-color: $payedblue;
+
+        &:hover {
+            background-color: $lightblue;
+        }
+    }
+
+    &--yellow {
+        background-color: $payedyellow;
+
+        &:hover {
+            background-color: $lightyellow;
+        }
+    }
+}

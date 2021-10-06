@@ -1,0 +1,42 @@
+@import 'blocks/page.scss';
+@import 'blocks/main.scss';
+@import 'blocks/vars.scss';
+@import 'blocks/mixins.scss';
+@import 'blocks/header.scss';
+@import 'blocks/searchbar.scss';
+@import 'blocks/userbar.scss';
+@import 'blocks/nav.scss';
+@import 'blocks/section.scss';
+@import 'blocks/banner.scss';
+@import 'blocks/hotbutton.scss';
+@import 'blocks/radiobuttons.scss';
+@import 'blocks/catalog.scss';
+@import 'blocks/card.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/social.scss';
+@import 'blocks/networks.scss';
+@import 'blocks/feedback.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: $primary;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}

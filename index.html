@@ -7,204 +7,150 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="src/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-      <div class="main">
-        <div class="content">
+      <div class="page">
+        <div class="page__main main">
             <!-- HEADER -->
-            <header>
-                <img class="logo" src="images/mainpage/logo.svg" width="215px" height="35px" alt="logo Kolesa">
-                <div class="active-bar">
-                    <div class="search">
-                        <button>
-                            <img src="images/mainpage/search.svg" width="18px" height="18px" alt="seacrh button">
+            <header class="main__header header">
+                <div class="logo">
+                    <img class="logo__img" src="images/mainpage/logo.svg" width="215px" height="35px" alt="Kolesa Group Logo">
+                </div>
+                <div class="header__activebar">
+                    <div class="searchbar">
+                        <button class="searchbar__button">
+                            <img src="images/mainpage/search.svg" width="18px" height="18px" alt="search image">
                         </button>
-                        <input type="text" placeholder="Поиск">
+                        <input class="searchbar__input" type="text" placeholder="Поиск">
                     </div>
-                    <a href="#" class="user">
-                        <img src="images/mainpage/user.svg" width="44px" height="44px" alt="user image">
-                        <div class="user-info">
-                            <p class="name">Мортиджан</p>
-                            <p class="points">300 баллов</p>
-                        </div>
+                    <a href="#" class="userbar">
+                        <img class="userbar__img" src="images/mainpage/user.svg" width="44px" height="44px" alt="user image">
+                        <span class="userbar__info">
+                            <p class="userbar__name">Мортиджан</p>
+                            <p class="userbar__points">300 баллов</p>
+                        </span>
                     </a>
                 </div>
             </header>
-            <div class="showcase">
+            <div class="main__showcase">
                 <!-- NAVBAR -->
-                <nav>
-                    <ul>
-                        <li><a href="#">Оргсхема</a></li>
-                        <li><a href="#">Kolesa <span class="kolesateam">Team</span></a></li>
-                        <li class="active"><a class="kolesashop" href="#">Kolesa Shop</a></li>
-                        <li><a href="#">Картина компании</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Guidelines</a></li>
-                        <li><a href="#">Библиотека</a></li>
-                        <li><a href="#">FAQ</a></li>
+                <nav class="main__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Оргсхема</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Kolesa <span class="nav_link nav__link--bold">Team</span></a></li>
+                        <li class="nav__item nav__item--active"><a class="nav__link nav__link--bold" href="#">Kolesa Shop</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Картина компании</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Education</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Guidelines</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Библиотека</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">FAQ</a></li>
                     </ul>
                 </nav>
                 <!-- SECTION -->
-                <section>
-                    <div class="banner">
-                        <img src="images/mainpage/banner.svg" width="1040px" height="335px" alt="banner">
+                <section class="section">
+                    <div class="section__banner banner">
+                        <img class="banner_img" src="images/mainpage/banner.svg" width="1040px" height="335px" alt="banner">
                     </div>
-                    <div class="hotbuttons">
-                        <button class="hotbutton_green">
-                            <span>Получить баллы</span>
-                            <img src="images/mainpage/plus.svg" width="40px" height="40px" alt="plus sign">
+                    <div class="section__hotbuttons">
+                        <button class="hotbutton hotbutton--green">
+                            <img class="hotbutton__img" src="images/mainpage/plus.svg" width="48px" height="56px" alt="plus sign">
+                            <span class="hotbutton__text">Получить баллы</span>
                         </button>
-                        <button class="hotbutton_yellow">
-                            <span>Как получить баллы</span>
-                            <img src="images/mainpage/question.svg" width="40px" height="40px" alt="question mark">
+                        <button class="hotbutton hotbutton--yellow">
+                            <img class="hotbutton__img" src="images/mainpage/question.svg" width="48px" height="56px" alt="question mark">
+                            <span class="hotbutton__text">Как получить баллы</span>
                         </button>
-                        <button class="hotbutton_blue">
-                            <span>Подарить баллы</span>
-                            <img src="images/mainpage/gift.svg" width="40px" height="40px" alt="gift">
+                        <button class="hotbutton hotbutton--blue">
+                            <img class="hotbutton__img" src="images/mainpage/gift.svg" width="48px" height="56px" alt="gift">
+                            <span class="hotbutton__text">Подарить баллы</span>
                         </button>
                     </div>
-                    <div class="radiobuttons">
-                        <input type="radio" name="category" id="all-items">
-                        <label for="all-items">Все товары</label>
-                        <input type="radio" name="category" id="clothes">
-                        <label for="clothes">Одежда</label>
-                        <input type="radio" name="category" id="accessories">
-                        <label for="accessories">Аксессуары</label>
+                    <div class="section__radiobuttons radiobuttons">
+                        <input class="radiobuttons__input" type="radio" name="category" id="all-items">
+                        <label class="radiobuttons__label" for="all-items">Все товары</label>
+                        <input class="radiobuttons__input" type="radio" name="category" id="clothes">
+                        <label class="radiobuttons__label" for="clothes">Одежда</label>
+                        <input class="radiobuttons__input" type="radio" name="category" id="accessories">
+                        <label class="radiobuttons__label" for="accessories">Аксессуары</label>
                     </div>
-                    <div class="options">
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
+                    <div class="section__catalog catalog">
+                        <div class="catalog__card card">
+                            <img class="card__img" src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
+                            <p class="card__points">220 баллов</p>
+                            <p class="card__description">Футболка "Эволюционируй или ...</p>
+                            <p class="card__sizes">Размеры S/M/L</p>
+                            <div class="card__hidden">
+                                <button class="card__button">Заказать</button>
                             </div>
                         </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
+                        <div class="catalog__card card">
+                            <img class="card__img" src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
+                            <p class="card__points">220 баллов</p>
+                            <p class="card__description">Футболка "Эволюционируй или ...</p>
+                            <p class="card__sizes">Размеры S/M/L</p>
+                            <div class="card__hidden">
+                                <button class="card__button">Заказать</button>
                             </div>
                         </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
+                        <div class="catalog__card card">
+                            <img class="card__img" src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
+                            <p class="card__points">220 баллов</p>
+                            <p class="card__description">Футболка "Эволюционируй или ...</p>
+                            <p class="card__sizes">Размеры S/M/L</p>
+                            <div class="card__hidden">
+                                <button class="card__button">Заказать</button>
                             </div>
                         </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
+                        <div class="catalog__card card">
+                            <img class="card__img" src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
+                            <p class="card__points">220 баллов</p>
+                            <p class="card__description">Футболка "Эволюционируй или ...</p>
+                            <p class="card__sizes">Размеры S/M/L</p>
+                            <div class="card__hidden">
+                                <button class="card__button">Заказать</button>
                             </div>
                         </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
+                        <div class="catalog__card card">
+                            <img class="card__img" src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
+                            <p class="card__points">220 баллов</p>
+                            <p class="card__description">Футболка "Эволюционируй или ...</p>
+                            <p class="card__sizes">Размеры S/M/L</p>
+                            <div class="card__hidden">
+                                <button class="card__button">Заказать</button>
                             </div>
                         </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <img src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
-                            <p class="option-points">220 баллов</p>
-                            <p class="option-description">Футболка "Эволюционируй или ...</p>
-                            <p class="option-sizes">Размеры S/M/L</p>
-                            <div class="hidden-button">
-                                <button>Заказать</button>
+                        <div class="catalog__card card">
+                            <img class="card__img" src="images/mainpage/tshirt.svg" width="330px" height="330px" alt="Kolesa t-shirt">
+                            <p class="card__points">220 баллов</p>
+                            <p class="card__description">Футболка "Эволюционируй или ...</p>
+                            <p class="card__sizes">Размеры S/M/L</p>
+                            <div class="card__hidden">
+                                <button class="card__button">Заказать</button>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
         </div>
-        <!-- FOOTER -->
-        <footer>
-            <div class="footer-content">
-                <div class="footer-social">
-                    <p>&copy; Kolesa Group</p>
-                    <div class="social">
-                        <a href="#"><img class="instagram" src="images/mainpage/instagram.svg" width="18px" height="18px" alt=""></a>
-                        <a href="#"><img class="youtube" src="images/mainpage/youtube.svg" width="18px" height="13px" alt=""></a>
-                        <a href="#"><img class="vk" src="images/mainpage/vk.svg" width="18px" height="11px" alt=""></a>
+        <footer class="page__footer footer">
+            <div class="footer__content">
+                <div class="footer__social social">
+                    <p class="social__copy">&copy; Kolesa Group</p>
+                    <div class="social__networks networks">
+                        <a class="networks__link" href="#"><img class="networks__img" src="images/mainpage/instagram.svg" width="18px" height="18px" alt="instagram logo"></a>
+                        <a class="networks__link" href="#"><img class="networks__img" src="images/mainpage/youtube.svg" width="18px" height="13px" alt="youtube logo"></a>
+                        <a class="networks__link" href="#"><img class="networks__img" src="images/mainpage/vk.svg" width="18px" height="11px" alt="vk logo"></a>
                     </div>
                 </div>
-                <div class="footer-feedback">
-                    <div class="feedback-text">
-                        <p>Есть идеи что улучшить?</p>
-                        <p>Не знаешь с кем решить проблему?</p>
+                <div class="footer__feedback feedback">
+                    <div class="feedback__description">
+                        <p class="feedback__text">Есть идеи что улучшить?</p>
+                        <p class="feedback__text">Не знаешь с кем решить проблему?</p>
                     </div>
-                    <button>Написать</button>
+                    <button class="feedback__button">Написать</button>
                 </div>
             </div>
         </footer>
