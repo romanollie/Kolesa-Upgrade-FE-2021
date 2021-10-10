@@ -1,0 +1,15 @@
+@import './vars.scss';
+
+.catalog {
+    min-width: 1040px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    color: $black;
+    font-family: $primary;
+
+    &__card {
+        margin-bottom: -40px;
+    }
+}
